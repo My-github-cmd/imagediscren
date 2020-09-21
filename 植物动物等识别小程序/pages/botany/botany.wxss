@@ -1,0 +1,17 @@
+.botany {
+  display: flex;
+  justify-content: space-around;
+  font-size: 32rpx;
+  flex-wrap: wrap;
+}
+
+.discern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230rpx;
+  height: 230rpx;
+  border: 1px solid #ccc;
+  color: white;
+  margin-top: 10rpx;
+}

@@ -1,0 +1,12 @@
+<view class="botany">
+	<!-- 从tabBar页面跳转到tarBar页面 -->
+	<!-- navigator：动态路由传参，不能使用反引号 -->
+	<block wx:for="{{data}}" wx:key="index">
+		<navigator url='../unload/unload?title={{item.title}}&id={{item.id}}' class="discern" wx:if="{{index!=8}}">
+			<view class="title">{{item.title}}</view>
+		</navigator>
+		<navigator url="#" class="discern" wx:else>
+			<view class="title">{{item.title}}</view>
+		</navigator>
+	</block>
+</view>

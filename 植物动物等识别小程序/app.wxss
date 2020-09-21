@@ -1,0 +1,4 @@
+/* @import "./node_modules/weui-miniprogram/weui-wxss/dist/style/weui.wxss"; */
+page {
+  height: 100%;
+}

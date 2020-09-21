@@ -1,0 +1,19 @@
+<view class="unload">
+	<view class="title">{{title}}</view>
+	<view bindtap="chooseImage" class="chooseImg">
+		<text wx:if="{{!imgUrl}}">添加图片</text>
+		<image src="{{imgUrl}}" class="img"></image>
+	</view>
+	<block wx:if="{{imageNews.length!=0}}">
+		<view class="news">
+      <text class="name">名称:</text>
+      <block wx:for="{{imageNews}}" wx:key="index">
+        <text class="itemName">{{item.name}}</text>
+      </block>
+    </view>
+		<view wx:if="{{imageNews[0].baike_info.description}}" class="bkNews">
+			<text class="bkNews">百科信息：</text>
+			<text selectable="true">{{imageNews[0].baike_info.description}}</text>
+		</view>
+	</block>
+</view>
